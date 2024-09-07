@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacked by Aditya</title>
+    <style>
+        body {
+            background-color: black;
+            color: red;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            overflow: hidden;
+        }
+
+        h1 {
+            color: red;
+            font-size: 3em;
+            animation: blink 1s infinite;
+        }
+
+        h2 {
+            color: lime;
+            font-size: 2.5em;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: .15em solid lime;
+            animation: typing 4s steps(30, end), blink-caret .75s step-end infinite;
+        }
+
+        .message {
+            color: red;
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+
+        /* Blinking animation */
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Typing effect */
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: lime; }
+        }
+
+        /* Background glitch effect */
+        @keyframes glitch {
+            0% { background-position: 0 0; }
+            20% { background-position: 10px 10px; }
+            40% { background-position: -10px -10px; }
+            60% { background-position: 10px -10px; }
+            80% { background-position: -10px 10px; }
+            100% { background-position: 0 0; }
+        }
+
+        body {
+            background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAUEBA==');
+            background-size: cover;
+            animation: glitch 1s steps(5, end) infinite;
+        }
+    </style>
+</head>
+<body>
+    <h1>[Hacked by Aditya]</h1>
+    <p class="message">Hello Admin! Please patch your website!</p>
+    <h2>YOU HAVE BEEN HACKED!</h2>
+</body>
+</html>
